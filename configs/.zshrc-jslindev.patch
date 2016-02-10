@@ -1,0 +1,19 @@
+--- configs/.zshrc	2016-02-10 19:23:25.119263500 +0000
++++ /home/justin/.zshrc	2016-02-10 20:02:58.159263500 +0000
+@@ -22,3 +22,16 @@
+   done
+ }
+ ssh-reagent
++
++export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
++
++export PATH=$PATH:/home/justin/bin
++
++[ -s "/home/justin/.dnx/dnvm/dnvm.sh" ] && . "/home/justin/.dnx/dnvm/dnvm.sh" # Load dnvm
++
++export PATH=$PATH:/usr/local/go/bin
++export GOPATH=$HOME/go
++export PATH=$PATH:$HOME/go/bin
++export EDITOR=vim
++export ZMQROOT="/usr/local/zeromq-4.1.3"
++
